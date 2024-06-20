@@ -68,7 +68,7 @@ x_data_vectorized = tfidf.fit_transform(x_data)
 x_data_combined = sp.hstack([x_data_vectorized, keyword_features])
 
 # Train-test split
-x_train, x_test, y_train, y_test = train_test_split(x_data_combined, y_data, test_size=0.3, random_state=0, shuffle=True)
+x_train, x_test, y_train, y_test = train_test_split(x_data_combined, y_data, test_size=0.2, random_state=0, shuffle=True)
 
 # Initialize and train KNN model
 knn_classifier = KNeighborsClassifier(n_neighbors=3)
