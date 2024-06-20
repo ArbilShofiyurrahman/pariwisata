@@ -109,10 +109,7 @@ def main():
         # Display result
         st.write("Berita Ini Merupakan Kategori:", predicted_category)
 
-        st.markdown("""
-         ### Kontak
-        Jika Anda memiliki pertanyaan atau masukan, silakan hubungi email di melfin.asis@gmail.com.
-        """)
+        
 
 if __name__ == "__main__":
     main()
