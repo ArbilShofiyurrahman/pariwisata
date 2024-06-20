@@ -19,8 +19,8 @@ keywords = {
         "gunung", "pantai", "hutan", "sungai", "air terjun", "camping", "dieng", "baduy", "labuan bajo",
         "ancol", "taman nasional", "gunung bromo", "raja ampat", "pulau komodo", "tanjung puting", "kawah ijen",
         "semeru", "merapi", "rinjani", "taman laut", "taman safari", "suaka margasatwa", "goa", "cagar alam",
-        "danau", "terumbu karang", "pesisir", "sabana", "bukit", "lembah", "padang rumput", "perkemahan",
-        "savana", "mangrove", "sumber air panas"
+        "danau", "terumbu karang", "pesisir", "sabana", "bukit", "lembah", "sawah", "perkemahan",
+        "tebing", "mangrove", "sumber air panas"
     ],
     "wisata buatan": [
         "taman bermain", "museum", "kebun binatang", "monumen", "pusat perbelanjaan", "hotel", "restoran",
