@@ -23,7 +23,7 @@ keywords = {
         "tebing", "mangrove", "sumber air panas"
     ],
     "wisata buatan": [
-        "taman bermain", "museum", "kebun binatang", "monumen", "pusat perbelanjaan", "hotel", "restoran",
+        "taman bermain", "museum", "kebun binatang", "monumen", "pasar", "hotel", "restoran",
         "waterpark", "theme park", "galeri seni", "taman kota", "gedung konser", "teater", "sirkus",
         "kebun raya", "taman bunga", "kolam renang", "kebun teh", "kebun kopi", "jembatan", "stadion",
         "arena olahraga", "perpustakaan", "bioskop", "pusat sains", "observatorium", "taman hiburan",
@@ -77,10 +77,20 @@ knn_classifier.fit(x_train, y_train)
 # Streamlit app
 def main():
     st.title("Klasifikasi Berita Pariwisata")
+    st.subheader("Selamat datang di aplikasi klasifikasi berita pariwisata!")
+    st.markdown("""
+    ### Informasi Aplikasi
+    Aplikasi ini dirancang untuk mengklasifikasikan berita pariwisata ke dalam tiga kategori utama:
+    1. **Wisata Religi**: Berita terkait tempat ibadah, kegiatan keagamaan, dan tempat ziarah.
+    2. **Wisata Alam**: Berita tentang keindahan alam seperti gunung, pantai, hutan, dan danau.
+    3. **Wisata Buatan**: Berita yang berhubungan dengan tempat-tempat buatan manusia seperti taman bermain, museum, dan pasar.
+
+    Masukkan teks berita pariwisata di bawah ini untuk melihat kategori yang sesuai.
+    """)
     st.subheader("Masukkan Berita Pariwisata di bawah:")
 
     # Text input for news article
-    article_text = st.text_area("Input Text", "")
+    article_text = st.text_area("Masukan Konten", "")
 
     if st.button("Kategori Kan Sekarang"):
         # Preprocess text
@@ -98,6 +108,11 @@ def main():
         predicted_category = categories.get(prediction[0], "Unknown")
         # Display result
         st.write("Berita Ini Merupakan Kategori:", predicted_category)
+
+        st.markdown("""
+         ### Kontak
+        Jika Anda memiliki pertanyaan atau masukan, silakan hubungi email di melfin.asis@gmail.com.
+        """)
 
 if __name__ == "__main__":
     main()
