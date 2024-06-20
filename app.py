@@ -82,7 +82,7 @@ def main():
     # Text input for news article
     article_text = st.text_area("Input Text", "")
 
-    if st.button("Classify"):
+    if st.button("Kategori Kan Sekarang"):
         # Preprocess text
         processed_text = preprocess_text(article_text)
         # Vectorize text
@@ -97,7 +97,7 @@ def main():
         categories = {0: "Wisata Religi", 1: "Wisata Alam", 2: "Wisata Buatan"}
         predicted_category = categories.get(prediction[0], "Unknown")
         # Display result
-        st.write("Predicted Category:", predicted_category)
+        st.write("Berita Ini Merupakan Kategori:", predicted_category)
 
 if __name__ == "__main__":
     main()
