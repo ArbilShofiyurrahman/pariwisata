@@ -107,7 +107,7 @@ def main():
         categories = {0: "Wisata Religi", 1: "Wisata Alam", 2: "Wisata Buatan"}
         predicted_category = categories.get(prediction[0], "Unknown")
         # Display result
-        st.write("Berita Ini Merupakan Kategori:", predicted_category)
+        st.write("Berita Ini Termasuk Kategori:", predicted_category)
 
         
 
